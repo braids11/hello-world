@@ -1,33 +1,260 @@
-Dec 10 09:35:39 elk filebeat[23366]: {"log.level":"info","@timestamp":"2025-12-10T09:35:39.629Z","log.logger":"beat","log.origin":{"function":"github.com/elastic/beats/v7/libbeat/cmd/instance.(*Beat).logSystemInfo","file.name":"instance/beat.go","file.line":1402},"message":"Go runtime info","service.name":"filebeat","system_info":{"go":{"os":"linux","arch":"amd64","max_procs":1,"version":"go1.24.9"},"ecs.version":"1.6.0"}}
-Dec 10 09:35:39 elk filebeat[23366]: {"log.level":"info","@timestamp":"2025-12-10T09:35:39.629Z","log.logger":"beat","log.origin":{"function":"github.com/elastic/beats/v7/libbeat/cmd/instance.(*Beat).logSystemInfo","file.name":"instance/beat.go","file.line":1408},"message":"Host info","service.name":"filebeat","system_info":{"host":{"architecture":"x86_64","native_architecture":"amd64","boot_time":"2025-12-09T17:38:24Z","containerized":false,"name":"elk","ip":["127.0.0.1","192.168.1.11","::1","fe80::20c:29ff:fe69:edbc"],"kernel_version":"5.15.0-163-generic","mac":["00:0c:29:69:ed:bc"],"os":{"type":"linux","family":"debian","platform":"ubuntu","name":"Ubuntu","version":"22.04.5 LTS (Jammy Jellyfish)","major":22,"minor":4,"patch":5,"codename":"jammy"},"timezone":"UTC","timezone_offset_sec":0,"id":"e6c8b0cb636d4473a7b5347cf524c169"},"ecs.version":"1.6.0"}}
-Dec 10 09:35:39 elk filebeat[23366]: {"log.level":"info","@timestamp":"2025-12-10T09:35:39.629Z","log.logger":"beat","log.origin":{"function":"github.com/elastic/beats/v7/libbeat/cmd/instance.(*Beat).logSystemInfo","file.name":"instance/beat.go","file.line":1437},"message":"Process info","service.name":"filebeat","system_info":{"process":{"capabilities":{"inheritable":null,"permitted":["chown","dac_override","dac_read_search","fowner","fsetid","kill","setgid","setuid","setpcap","linux_immutable","net_bind_service","net_broadcast","net_admin","net_raw","ipc_lock","ipc_owner","sys_module","sys_rawio","sys_chroot","sys_ptrace","sys_pacct","sys_admin","sys_boot","sys_nice","sys_resource","sys_time","sys_tty_config","mknod","lease","audit_write","audit_control","setfcap","mac_override","mac_admin","syslog","wake_alarm","block_suspend","audit_read","perfmon","bpf","checkpoint_restore"],"effective":["chown","dac_override","dac_read_search","fowner","fsetid","kill","setgid","setuid","setpcap","linux_immutable","net_bind_service","net_broadcast","net_admin","net_raw","ipc_lock","ipc_owner","sys_module","sys_rawio","sys_chroot","sys_ptrace","sys_pacct","sys_admin","sys_boot","sys_nice","sys_resource","sys_time","sys_tty_config","mknod","lease","audit_write","audit_control","setfcap","mac_override","mac_admin","syslog","wake_alarm","block_suspend","audit_read","perfmon","bpf","checkpoint_restore"],"bounding":["chown","dac_override","dac_read_search","fowner","fsetid","kill","setgid","setuid","setpcap","linux_immutable","net_bind_service","net_broadcast","net_admin","net_raw","ipc_lock","ipc_owner","sys_module","sys_rawio","sys_chroot","sys_ptrace","sys_pacct","sys_admin","sys_boot","sys_nice","sys_resource","sys_time","sys_tty_config","mknod","lease","audit_write","audit_control","setfcap","mac_override","mac_admin","syslog","wake_alarm","block_suspend","audit_read","perfmon","bpf","checkpoint_restore"],"ambient":null},"cwd":"/","exe":"/usr/share/filebeat/bin/filebeat","name":"filebeat","pid":23366,"ppid":1,"seccomp":{"mode":"filter","no_new_privs":true},"start_time":"2025-12-10T09:35:39.240Z"},"ecs.version":"1.6.0"}}
-Dec 10 09:35:39 elk filebeat[23366]: {"log.level":"info","@timestamp":"2025-12-10T09:35:39.635Z","log.logger":"publisher","log.origin":{"function":"github.com/elastic/beats/v7/libbeat/publisher/pipeline.LoadWithSettings","file.name":"pipeline/module.go","file.line":105},"message":"Beat name: elk","service.name":"filebeat","ecs.version":"1.6.0"}
-Dec 10 09:35:39 elk filebeat[23366]: {"log.level":"info","@timestamp":"2025-12-10T09:35:39.635Z","log.logger":"modules","log.origin":{"function":"github.com/elastic/beats/v7/filebeat/fileset.newModuleRegistry","file.name":"fileset/modules.go","file.line":135},"message":"Enabled modules/filesets: ","service.name":"filebeat","ecs.version":"1.6.0"}
-Dec 10 09:35:39 elk filebeat[23366]: {"log.level":"warn","@timestamp":"2025-12-10T09:35:39.635Z","log.origin":{"function":"github.com/elastic/beats/v7/filebeat/beater.(*Filebeat).setupPipelineLoaderCallback","file.name":"beater/filebeat.go","file.line":177},"message":"Filebeat is unable to load the ingest pipelines for the configured modules because the Elasticsearch output is not configured/enabled. If you have already loaded the ingest pipelines or are using Logstash pipelines, you can ignore this warning.","service.name":"filebeat","ecs.version":"1.6.0"}
-Dec 10 09:35:39 elk filebeat[23366]: {"log.level":"info","@timestamp":"2025-12-10T09:35:39.636Z","log.logger":"monitoring","log.origin":{"function":"github.com/elastic/beats/v7/libbeat/monitoring/report/log.(*reporter).snapshotLoop","file.name":"log/log.go","file.line":150},"message":"Starting metrics logging every 30s","service.name":"filebeat","ecs.version":"1.6.0"}
-Dec 10 09:35:39 elk filebeat[23366]: {"log.level":"info","@timestamp":"2025-12-10T09:35:39.636Z","log.origin":{"function":"github.com/elastic/beats/v7/libbeat/cmd/instance.(*Beat).launch","file.name":"instance/beat.go","file.line":539},"message":"filebeat start running.","service.name":"filebeat","ecs.version":"1.6.0"}
-Dec 10 09:35:39 elk filebeat[23366]: {"log.level":"info","@timestamp":"2025-12-10T09:35:39.636Z","log.logger":"filebeat","log.origin":{"function":"github.com/elastic/beats/v7/libbeat/statestore/backend/memlog.openStore","file.name":"memlog/store.go","file.line":134},"message":"Finished loading transaction log file for '/var/lib/filebeat/registry/filebeat'. Active transaction id=0","service.name":"filebeat","store":"filebeat","ecs.version":"1.6.0"}
-Dec 10 09:35:39 elk filebeat[23366]: {"log.level":"warn","@timestamp":"2025-12-10T09:35:39.636Z","log.origin":{"function":"github.com/elastic/beats/v7/filebeat/beater.(*Filebeat).Run","file.name":"beater/filebeat.go","file.line":403},"message":"Filebeat is unable to load the ingest pipelines for the configured modules because the Elasticsearch output is not configured/enabled. If you have already loaded the ingest pipelines or are using Logstash pipelines, you can ignore this warning.","service.name":"filebeat","ecs.version":"1.6.0"}
-Dec 10 09:35:39 elk filebeat[23366]: {"log.level":"info","@timestamp":"2025-12-10T09:35:39.636Z","log.logger":"registrar","log.origin":{"function":"github.com/elastic/beats/v7/filebeat/registrar.(*Registrar).loadStates","file.name":"registrar/registrar.go","file.line":103},"message":"States Loaded from registrar: 0","service.name":"filebeat","ecs.version":"1.6.0"}
-Dec 10 09:35:39 elk filebeat[23366]: {"log.level":"info","@timestamp":"2025-12-10T09:35:39.636Z","log.logger":"crawler","log.origin":{"function":"github.com/elastic/beats/v7/filebeat/beater.(*crawler).Start","file.name":"beater/crawler.go","file.line":72},"message":"Loading Inputs: 1","service.name":"filebeat","ecs.version":"1.6.0"}
-Dec 10 09:35:39 elk filebeat[23366]: {"log.level":"info","@timestamp":"2025-12-10T09:35:39.637Z","log.logger":"crawler","log.origin":{"function":"github.com/elastic/beats/v7/filebeat/beater.(*crawler).startInput","file.name":"beater/crawler.go","file.line":118},"message":"input disabled, skipping it","service.name":"filebeat","ecs.version":"1.6.0"}
-Dec 10 09:35:39 elk filebeat[23366]: {"log.level":"info","@timestamp":"2025-12-10T09:35:39.637Z","log.logger":"modules","log.origin":{"function":"github.com/elastic/beats/v7/filebeat/fileset.newModuleRegistry","file.name":"fileset/modules.go","file.line":135},"message":"Enabled modules/filesets: ","service.name":"filebeat","ecs.version":"1.6.0"}
-Dec 10 09:35:39 elk filebeat[23366]: {"log.level":"info","@timestamp":"2025-12-10T09:35:39.637Z","log.logger":"crawler","log.origin":{"function":"github.com/elastic/beats/v7/filebeat/beater.(*crawler).Stop","file.name":"beater/crawler.go","file.line":152},"message":"Stopping Crawler","service.name":"filebeat","ecs.version":"1.6.0"}
-Dec 10 09:35:39 elk filebeat[23366]: {"log.level":"info","@timestamp":"2025-12-10T09:35:39.637Z","log.logger":"crawler","log.origin":{"function":"github.com/elastic/beats/v7/filebeat/beater.(*crawler).Stop","file.name":"beater/crawler.go","file.line":162},"message":"Stopping 0 inputs","service.name":"filebeat","ecs.version":"1.6.0"}
-Dec 10 09:35:39 elk filebeat[23366]: {"log.level":"info","@timestamp":"2025-12-10T09:35:39.637Z","log.logger":"crawler","log.origin":{"function":"github.com/elastic/beats/v7/filebeat/beater.(*crawler).Stop","file.name":"beater/crawler.go","file.line":182},"message":"Crawler stopped","service.name":"filebeat","ecs.version":"1.6.0"}
-Dec 10 09:35:39 elk filebeat[23366]: {"log.level":"info","@timestamp":"2025-12-10T09:35:39.638Z","log.logger":"registrar","log.origin":{"function":"github.com/elastic/beats/v7/filebeat/registrar.(*Registrar).Stop","file.name":"registrar/registrar.go","file.line":126},"message":"Stopping Registrar","service.name":"filebeat","ecs.version":"1.6.0"}
-Dec 10 09:35:39 elk filebeat[23366]: {"log.level":"info","@timestamp":"2025-12-10T09:35:39.638Z","log.logger":"registrar","log.origin":{"function":"github.com/elastic/beats/v7/filebeat/registrar.(*Registrar).Run","file.name":"registrar/registrar.go","file.line":162},"message":"Ending Registrar","service.name":"filebeat","ecs.version":"1.6.0"}
-Dec 10 09:35:39 elk filebeat[23366]: {"log.level":"info","@timestamp":"2025-12-10T09:35:39.638Z","log.logger":"registrar","log.origin":{"function":"github.com/elastic/beats/v7/filebeat/registrar.(*Registrar).Stop","file.name":"registrar/registrar.go","file.line":131},"message":"Registrar stopped","service.name":"filebeat","ecs.version":"1.6.0"}
-Dec 10 09:35:39 elk filebeat[23366]: {"log.level":"info","@timestamp":"2025-12-10T09:35:39.639Z","log.logger":"monitoring","log.origin":{"function":"github.com/elastic/beats/v7/libbeat/monitoring/report/log.(*reporter).logTotals","file.name":"log/log.go","file.line":200},"message":"Total metrics","service.name":"filebeat","monitoring":{"metrics":{"beat":{"cgroup":{"cpu":{"id":"filebeat.service","stats":{"periods":0,"throttled":{"ns":0,"periods":0}}},"memory":{"id":"filebeat.service","mem":{"usage":{"bytes":39788544}}}},"cpu":{"system":{"ticks":20,"time":{"ms":20}},"total":{"ticks":50,"time":{"ms":50},"value":50},"user":{"ticks":30,"time":{"ms":30}}},"handles":{"limit":{"hard":524288,"soft":524287},"open":15},"info":{"ephemeral_id":"97c92dc1-6673-4629-a5e9-a56e84cd763d","name":"filebeat","uptime":{"ms":33},"version":"8.19.8"},"memstats":{"gc_next":22728410,"memory_alloc":17585800,"memory_sys":26563848,"memory_total":24715416,"rss":123445248},"runtime":{"goroutines":37}},"filebeat":{"events":{"active":0,"added":0,"done":0},"harvester":{"closed":0,"open_files":0,"running":0,"skipped":0,"started":0},"input":{"log":{"files":{"renamed":0,"truncated":0}}}},"libbeat":{"config":{"module":{"running":0,"starts":0,"stops":0},"reloads":0,"scans":0},"output":{"batches":{"split":0},"events":{"acked":0,"active":0,"batches":0,"dead_letter":0,"dropped":0,"duplicates":0,"failed":0,"toomany":0,"total":0},"read":{"bytes":0,"errors":0},"type":"logstash","write":{"bytes":0,"errors":0,"latency":{"histogram":{"count":0,"max":0,"mean":0,"median":0,"min":0,"p75":0,"p95":0,"p99":0,"p999":0,"stddev":0}}}},"pipeline":{"clients":0,"events":{"active":0,"dropped":0,"failed":0,"filtered":0,"published":0,"retry":0,"total":0},"queue":{"acked":0,"added":{"bytes":0,"events":0},"consumed":{"bytes":0,"events":0},"filled":{"bytes":0,"events":0,"pct":0},"max_bytes":0,"max_events":3200,"removed":{"bytes":0,"events":0}}}},"processor":{"add_host_metadata":{"fqdn_lookup_failed":0}},"registrar":{"states":{"cleanup":0,"current":0,"update":0},"writes":{"fail":0,"success":0,"total":0}},"system":{"cpu":{"cores":1},"load":{"1":0.45,"15":0.11,"5":0.23,"norm":{"1":0.45,"15":0.11,"5":0.23}}}},"ecs.version":"1.6.0"}}
-Dec 10 09:35:39 elk filebeat[23366]: {"log.level":"info","@timestamp":"2025-12-10T09:35:39.639Z","log.logger":"monitoring","log.origin":{"function":"github.com/elastic/beats/v7/libbeat/monitoring/report/log.(*reporter).logTotals","file.name":"log/log.go","file.line":201},"message":"Uptime: 25.259693ms","service.name":"filebeat","ecs.version":"1.6.0"}
-Dec 10 09:35:39 elk filebeat[23366]: {"log.level":"info","@timestamp":"2025-12-10T09:35:39.639Z","log.logger":"monitoring","log.origin":{"function":"github.com/elastic/beats/v7/libbeat/monitoring/report/log.(*reporter).snapshotLoop","file.name":"log/log.go","file.line":168},"message":"Stopping metrics logging.","service.name":"filebeat","ecs.version":"1.6.0"}
-Dec 10 09:35:39 elk filebeat[23366]: {"log.level":"info","@timestamp":"2025-12-10T09:35:39.640Z","log.origin":{"function":"github.com/elastic/beats/v7/libbeat/cmd/instance.(*Beat).launch","file.name":"instance/beat.go","file.line":548},"message":"filebeat stopped.","service.name":"filebeat","ecs.version":"1.6.0"}
-Dec 10 09:35:39 elk filebeat[23366]: {"log.level":"error","@timestamp":"2025-12-10T09:35:39.640Z","log.origin":{"function":"github.com/elastic/beats/v7/libbeat/cmd/instance.handleError","file.name":"instance/beat.go","file.line":1361},"message":"Exiting: Failed to start crawler: creating module reloader failed: could not create module registry for filesets: module system is configured but has no enabled filesets","service.name":"filebeat","ecs.version":"1.6.0"}
-Dec 10 09:35:39 elk filebeat[23366]: Exiting: Failed to start crawler: creating module reloader failed: could not create module registry for filesets: module system is configured but has no enabled filesets
-Dec 10 09:35:39 elk systemd[1]: filebeat.service: Main process exited, code=exited, status=1/FAILURE
-Dec 10 09:35:39 elk systemd[1]: filebeat.service: Failed with result 'exit-code'.
-Dec 10 09:35:39 elk systemd[1]: filebeat.service: Scheduled restart job, restart counter is at 5.
-Dec 10 09:35:39 elk systemd[1]: Stopped Filebeat sends log files to Logstash or directly to Elasticsearch..
-Dec 10 09:35:39 elk systemd[1]: filebeat.service: Start request repeated too quickly.
-Dec 10 09:35:39 elk systemd[1]: filebeat.service: Failed with result 'exit-code'.
-Dec 10 09:35:39 elk systemd[1]: Failed to start Filebeat sends log files to Logstash or directly to Elasticsearch..
+###################### Filebeat Configuration Example #########################
+
+# This file is an example configuration file highlighting only the most common
+# options. The filebeat.reference.yml file from the same directory contains all the
+# supported options with more comments. You can use it as a reference.
+#
+# You can find the full configuration reference here:
+# https://www.elastic.co/guide/en/beats/filebeat/index.html
+
+# For more available modules and options, please see the filebeat.reference.yml sample
+# configuration file.
+
+# ============================== Filebeat inputs ===============================
+
+filebeat.inputs:
+
+# Each - is an input. Most options can be set at the input level, so
+# you can use different inputs for various configurations.
+# Below are the input-specific configurations.
+
+# filestream is an input for collecting log messages from files.
+- type: filestream
+
+  # Unique ID among all inputs, an ID is required.
+  id: my-filestream-id
+
+  # Change to true to enable this input configuration.
+  enabled: false
+
+  # Paths that should be crawled and fetched. Glob based paths.
+  paths:
+    - /var/log/*.log
+    #- c:\programdata\elasticsearch\logs\*
+
+  # Exclude lines. A list of regular expressions to match. It drops the lines that are
+  # matching any regular expression from the list.
+  # Line filtering happens after the parsers pipeline. If you would like to filter lines
+  # before parsers, use include_message parser.
+  #exclude_lines: ['^DBG']
+
+  # Include lines. A list of regular expressions to match. It exports the lines that are
+  # matching any regular expression from the list.
+  # Line filtering happens after the parsers pipeline. If you would like to filter lines
+  # before parsers, use include_message parser.
+  #include_lines: ['^ERR', '^WARN']
+
+  # Exclude files. A list of regular expressions to match. Filebeat drops the files that
+  # are matching any regular expression from the list. By default, no files are dropped.
+  #prospector.scanner.exclude_files: ['.gz$']
+
+  # Optional additional fields. These fields can be freely picked
+  # to add additional information to the crawled log files for filtering
+  #fields:
+  #  level: debug
+  #  review: 1
+
+# journald is an input for collecting logs from Journald
+#- type: journald
+
+  # Unique ID among all inputs, if the ID changes, all entries
+  # will be re-ingested
+  #id: my-journald-id
+
+  # The position to start reading from the journal, valid options are:
+  #  - head: Starts reading at the beginning of the journal.
+  #  - tail: Starts reading at the end of the journal.
+  #    This means that no events will be sent until a new message is written.
+  #  - since: Use also the `since` option to determine when to start reading from.
+  #seek: head
+
+  # A time offset from the current time to start reading from.
+  # To use since, seek option must be set to since.
+  #since: -24h
+
+  # Collect events from the service and messages about the service,
+  # including coredumps.
+  #units:
+    #- docker.service
+
+# ============================== Filebeat modules ==============================
+
+filebeat.config.modules:
+  # Glob pattern for configuration loading
+  path: ${path.config}/modules.d/*.yml
+
+  # Set to true to enable config reloading
+  reload.enabled: false
+
+  # Period on which files under path should be checked for changes
+  #reload.period: 10s
+
+# ======================= Elasticsearch template setting =======================
+
+setup.template.settings:
+  index.number_of_shards: 1
+  #index.codec: best_compression
+  #_source.enabled: false
+
+
+# ================================== General ===================================
+
+# The name of the shipper that publishes the network data. It can be used to group
+# all the transactions sent by a single shipper in the web interface.
+#name:
+
+# The tags of the shipper are included in their field with each
+# transaction published.
+#tags: ["service-X", "web-tier"]
+
+# Optional fields that you can specify to add additional information to the
+# output.
+#fields:
+#  env: staging
+
+# ================================= Dashboards =================================
+# These settings control loading the sample dashboards to the Kibana index. Loading
+# the dashboards is disabled by default and can be enabled either by setting the
+# options here or by using the `setup` command.
+#setup.dashboards.enabled: false
+
+# The URL from where to download the dashboard archive. By default, this URL
+# has a value that is computed based on the Beat name and version. For released
+# versions, this URL points to the dashboard archive on the artifacts.elastic.co
+# website.
+#setup.dashboards.url:
+
+# =================================== Kibana ===================================
+
+# Starting with Beats version 6.0.0, the dashboards are loaded via the Kibana API.
+# This requires a Kibana endpoint configuration.
+setup.kibana:
+
+  # Kibana Host
+  # Scheme and port can be left out and will be set to the default (http and 5601)
+  # In case you specify and additional path, the scheme is required: http://localhost:5601/path
+  # IPv6 addresses should always be defined as: https://[2001:db8::1]:5601
+  #host: "localhost:5601"
+
+  # Kibana Space ID
+  # ID of the Kibana Space into which the dashboards should be loaded. By default,
+  # the Default Space will be used.
+  #space.id:
+
+# =============================== Elastic Cloud ================================
+
+# These settings simplify using Filebeat with the Elastic Cloud (https://cloud.elastic.co/).
+
+# The cloud.id setting overwrites the `output.elasticsearch.hosts` and
+# `setup.kibana.host` options.
+# You can find the `cloud.id` in the Elastic Cloud web UI.
+#cloud.id:
+
+# The cloud.auth setting overwrites the `output.elasticsearch.username` and
+# `output.elasticsearch.password` settings. The format is `<user>:<pass>`.
+#cloud.auth:
+
+# ================================== Outputs ===================================
+
+# Configure what output to use when sending the data collected by the beat.
+
+# ---------------------------- Elasticsearch Output ----------------------------
+output.elasticsearch:
+  # Array of hosts to connect to.
+  hosts: ["localhost:9200"]
+
+  # Performance preset - one of "balanced", "throughput", "scale",
+  # "latency", or "custom".
+  preset: balanced
+
+  # Protocol - either `http` (default) or `https`.
+  #protocol: "https"
+
+  # Authentication credentials - either API key or username/password.
+  #api_key: "id:api_key"
+  #username: "elastic"
+  #password: "changeme"
+
+# ------------------------------ Logstash Output -------------------------------
+#output.logstash:
+  # The Logstash hosts
+  #hosts: ["localhost:5044"]
+
+  # Optional SSL. By default is off.
+  # List of root certificates for HTTPS server verifications
+  #ssl.certificate_authorities: ["/etc/pki/root/ca.pem"]
+
+  # Certificate for SSL client authentication
+  #ssl.certificate: "/etc/pki/client/cert.pem"
+
+  # Client Certificate Key
+  #ssl.key: "/etc/pki/client/cert.key"
+
+# ================================= Processors =================================
+processors:
+  - add_host_metadata:
+      when.not.contains.tags: forwarded
+  - add_cloud_metadata: ~
+  - add_docker_metadata: ~
+  - add_kubernetes_metadata: ~
+
+# ================================== Logging ===================================
+
+# Sets log level. The default log level is info.
+# Available log levels are: error, warning, info, debug
+#logging.level: debug
+
+# At debug level, you can selectively enable logging only for some components.
+# To enable all selectors, use ["*"]. Examples of other selectors are "beat",
+# "publisher", "service".
+#logging.selectors: ["*"]
+
+# ============================= X-Pack Monitoring ==============================
+# Filebeat can export internal metrics to a central Elasticsearch monitoring
+# cluster.  This requires xpack monitoring to be enabled in Elasticsearch.  The
+# reporting is disabled by default.
+
+# Set to true to enable the monitoring reporter.
+#monitoring.enabled: false
+
+# Sets the UUID of the Elasticsearch cluster under which monitoring data for this
+# Filebeat instance will appear in the Stack Monitoring UI. If output.elasticsearch
+# is enabled, the UUID is derived from the Elasticsearch cluster referenced by output.elasticsearch.
+#monitoring.cluster_uuid:
+
+# Uncomment to send the metrics to Elasticsearch. Most settings from the
+# Elasticsearch outputs are accepted here as well.
+# Note that the settings should point to your Elasticsearch *monitoring* cluster.
+# Any setting that is not set is automatically inherited from the Elasticsearch
+# output configuration, so if you have the Elasticsearch output configured such
+# that it is pointing to your Elasticsearch monitoring cluster, you can simply
+# uncomment the following line.
+#monitoring.elasticsearch:
+
+# ============================== Instrumentation ===============================
+
+# Instrumentation support for the filebeat.
+#instrumentation:
+    # Set to true to enable instrumentation of filebeat.
+    #enabled: false
+
+    # Environment in which filebeat is running on (eg: staging, production, etc.)
+    #environment: ""
+
+    # APM Server hosts to report instrumentation results to.
+    #hosts:
+    #  - http://localhost:8200
+
+    # API Key for the APM Server(s).
+    # If api_key is set then secret_token will be ignored.
+    #api_key:
+
+    # Secret token for the APM Server(s).
+    #secret_token:
+
+
+# ================================= Migration ==================================
+
+# This allows to enable 6.7 migration aliases
+#migration.6_to_7.enabled: true
+
